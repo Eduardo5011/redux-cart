@@ -12,14 +12,14 @@ const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
-    clearCart: (state)=> {
+    clearCart: (state) => {
       state.cartItems = [];
-    }
-  }
+    },
+  },
 });
 
-console.log(cartSlice)
+// console.log(cartSlice)
 
-export const {clearCart} = cartSlice.actions
+export const { clearCart } = cartSlice.actions;
 
-export default cartSlice.reducer
+export default cartSlice.reducer;
