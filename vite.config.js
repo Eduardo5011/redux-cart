@@ -9,7 +9,7 @@ export default defineConfig({
       '/api': {
         target: 'https://www.course-api.com',
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ''), // Removes '/api' prefix before forwarding
+        rewrite: (path) => path.replace(/^\/api/, ''), 
       },
     },
   },
