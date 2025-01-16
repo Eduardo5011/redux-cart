@@ -3,7 +3,11 @@ import { openModal } from "../modal/modalSlice";
 import axios from "axios";
 import { act } from "react";
 
-const url = "/api/react-useReducer-cart-project";
+const url =
+  process.env.NODE_ENV === "production"
+    ? "https://www.course-api.com/react-useReducer-cart-project"
+    : "/api/react-useReducer-cart-project"; 
+
 
 const initialState = {
   cartItems: [],
