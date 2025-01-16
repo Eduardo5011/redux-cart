@@ -3,7 +3,7 @@ import { openModal } from "../modal/modalSlice";
 import axios from "axios";
 import { act } from "react";
 
-const url = "https://course-api.com/react-useReducer-cart-project";
+const url = "/api/react-useReducer-cart-project";
 
 const initialState = {
   cartItems: [],
